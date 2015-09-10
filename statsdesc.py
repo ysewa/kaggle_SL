@@ -36,7 +36,7 @@ print new_dataset['VAR_0010']
 print new_dataset['VAR_0466']
 
 dict_fill_rate={}
-n=len(data_train.columns)
+n=len(data_train)
 for  col in data_train.columns:
 	dict_fill_rate[col]=float(len(data_train[col][np.isnan(data_train[col])]))/n*100
 
